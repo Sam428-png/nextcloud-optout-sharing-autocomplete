@@ -3,20 +3,20 @@
 		:name="t('autocomplete_settings', 'Autocomplete visibility')"
 		:description="t('autocomplete_settings', 'Control your visibility in sharing autocomplete')"
 	>
-		<NcCheckboxRadioSwitch
-			v-model="optedOut"
-			:disabled="loading || saving"
-			type="switch"
-			class="autocomplete-switch"
-		>
-			{{ t('autocomplete_settings', 'Hide from autocomplete suggestions') }}
-		</NcCheckboxRadioSwitch>
-		
-		<p class="settings-hint">
+		<div class="autocomplete-switch-wrapper">
+			<NcCheckboxRadioSwitch
+				v-model="optedOut"
+				:disabled="loading || saving"
+				type="switch"
+			>
+				{{ t('autocomplete_settings', 'Hide from autocomplete suggestions') }}
+			</NcCheckboxRadioSwitch>
+		</div>
+		<p class="autocomplete-hint">
 			{{ t('autocomplete_settings', 'When enabled, your account will not appear in autocomplete suggestions when other users share files or folders. Users can still share with you by typing your exact username.') }}
 		</p>
 		
-		<p v-if="saving" class="settings-hint">
+		<p v-if="saving" class="autocomplete-hint">
 			{{ t('autocomplete_settings', 'Saving...') }}
 		</p>
 		
@@ -129,15 +129,15 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+.autocomplete-switch-wrapper {
+    margin-bottom: 16px;
+}
+
 .settings-hint {
 	color: var(--color-text-maxcontrast);
 	margin-top: 8px;
 	margin-bottom: 10px;
 	margin-left: 30px;
-}
-
-.autocomplete-switch {
-    margin-bottom: 16px;
 }
 </style>
