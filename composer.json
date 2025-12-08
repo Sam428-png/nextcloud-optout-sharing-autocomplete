@@ -1,0 +1,39 @@
+{
+    "name": "nextcloud/autocomplete_settings",
+    "description": "Allow users to opt-out from autocomplete suggestions in Nextcloud",
+    "type": "project",
+    "license": "AGPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Tom Wezepoel",
+            "email": "tom.wezepoel@surf.nl"
+        }
+    ],
+    "require": {
+        "php": "^8.0 || ^8.1 || ^8.2 || ^8.3"
+    },
+    "require-dev": {
+        "nextcloud/coding-standard": "^1.0",
+        "phpunit/phpunit": "^9.5",
+        "psalm/phar": "^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "OCA\\AutocompleteSettings\\": "lib/"
+        }
+    },
+    "scripts": {
+        "lint": "find . -name \\*.php -not -path './vendor/*' -not -path './build/*' -print0 | xargs -0 -n1 php -l",
+        "cs:check": "php-cs-fixer fix --dry-run --diff",
+        "cs:fix": "php-cs-fixer fix",
+        "psalm": "psalm.phar --no-cache",
+        "test": "phpunit -c phpunit.xml"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true,
+        "platform": {
+            "php": "8.0"
+        }
+    }
+}
