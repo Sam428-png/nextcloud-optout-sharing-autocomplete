@@ -1,18 +1,16 @@
 <template>
-	<NcSettingsSection
-		:name="t('autocomplete_settings', 'Autocomplete visibility')"
-		:description="t('autocomplete_settings', 'Control your visibility in sharing autocomplete')"
-	>
-		<div class="autocomplete-switch-wrapper">
-			<NcCheckboxRadioSwitch
-				v-model="optedOut"
-				:disabled="loading || saving"
-				type="switch"
-			>
-				{{ t('autocomplete_settings', 'Hide from autocomplete suggestions') }}
-			</NcCheckboxRadioSwitch>
-		</div>
-		<p class="autocomplete-hint">
+	<div id="autocomplete_settings">
+		<h2>{{ t('autocomplete_settings', 'Autocomplete visibility') }}</h2>
+		<p>{{ t('autocomplete_settings', 'Control your visibility in sharing autocomplete') }}</p>
+		<NcCheckboxRadioSwitch
+			class="autocomplete-switch-wrapper"
+			v-model="optedOut"
+			:disabled="loading || saving"
+			type="switch"
+		>
+			{{ t('autocomplete_settings', 'Hide from autocomplete suggestions') }}
+		</NcCheckboxRadioSwitch>
+		<p class="settings-hint">
 			{{ t('autocomplete_settings', 'When enabled, your account will not appear in autocomplete suggestions when other users share files or folders. Users can still share with you by typing your exact username.') }}
 		</p>
 		
@@ -23,7 +21,7 @@
 		<NcNoteCard v-if="error" type="error">
 			{{ error }}
 		</NcNoteCard>
-	</NcSettingsSection>
+	</div>
 </template>
 
 <script>
@@ -129,11 +127,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
-.autocomplete-switch-wrapper {
-    margin-bottom: 16px;
-}
-
+<style lang="scss" scoped>
 .settings-hint {
 	color: var(--color-text-maxcontrast);
 	margin-top: 8px;

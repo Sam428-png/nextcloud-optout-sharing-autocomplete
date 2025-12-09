@@ -60,6 +60,7 @@ class Personal implements ISettings {
         );
 
         Util::addScript(Application::APP_ID, 'autocomplete_settings-main');
+        Util::addStyle(Application::APP_ID, 'autocomplete_settings-main');
 
         return new TemplateResponse(Application::APP_ID, 'settings-personal');
     }
