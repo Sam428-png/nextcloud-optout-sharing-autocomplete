@@ -5,7 +5,7 @@
     <name>Autocomplete Settings</name>
     <summary>Allow users to opt-out from autocomplete suggestions</summary>
     <description><![CDATA[This app allows users to hide themselves from autocomplete suggestions when other users share files or folders. Users can still be shared with by typing their exact username.]]></description>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <licence>agpl</licence>
     <author>Tom Wezepoel</author>
     <namespace>AutocompleteSettings</namespace>
@@ -13,7 +13,7 @@
     <bugs>https://github.com/sara-nl/nextcloud-optout-sharing-autocomplete/issues</bugs>
     
     <dependencies>
-        <nextcloud min-version="30" max-version="32"/>
+        <nextcloud min-version="30" max-version="33"/>
     </dependencies>
     
     <settings>
