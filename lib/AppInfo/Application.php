@@ -22,6 +22,7 @@ class Application extends App implements IBootstrap {
 
 	#[\Override]
 	public function register(IRegistrationContext $context): void {
+		// The collaborator search plugin is registered in appinfo/info.xml
 	}
 
 	#[\Override]
