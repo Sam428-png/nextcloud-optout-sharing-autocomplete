@@ -20,6 +20,18 @@ The app registers a collaborator search plugin (see `appinfo/info.xml`) that run
 and removes opted-out users from the partial matches. Exact matches are kept.
 This applies to every feature that uses the Nextcloud collaborator search, such as the share dialog and @mentions in comments.
 
+### Tests
+
+The tests run against a real Nextcloud, using the official Docker image:
+
+```
+npm ci && npm run build
+make test nc=35
+```
+
+`tests/e2e/e2e.sh` can also run against an existing test server over SSH, see the comment at the top of the script.
+GitHub Actions runs the tests on Nextcloud 33, 34 and 35 for every pull request, and weekly against the newest Nextcloud release.
+
 ### Upgrading from 1.0.x
 
 Version 1.0.x needed a patch to `apps/files_sharing`. That is no longer needed, the app now filters the results itself.

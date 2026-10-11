@@ -253,10 +253,11 @@ buildapp-tests:
 	$(app_name) && \
 	rm $(app_name)
 
+# End-to-end tests against the official Nextcloud Docker image
+# command: make test nc={nextcloud_version}, eg. make test nc=34 (default 35)
 .PHONY: test
-test: composer
-	$(CURDIR)/vendor/bin/phplint ./ --exclude=vendor
-	$(CURDIR)/vendor/phpunit/phpunit/phpunit -c phpunit.xml
+test: build-js-production
+	$(CURDIR)/tests/e2e/run-docker.sh $(or $(nc),35)
 
 check-version:
 	@if [ "${version}" = "" ]; then\
