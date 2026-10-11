@@ -13,7 +13,8 @@
     <bugs>https://github.com/sara-nl/nextcloud-optout-sharing-autocomplete/issues</bugs>
     
     <dependencies>
-        <nextcloud min-version="30" max-version="33"/>
+        <php min-version="8.2"/>
+        <nextcloud min-version="33" max-version="35"/>
     </dependencies>
     
     <settings>
