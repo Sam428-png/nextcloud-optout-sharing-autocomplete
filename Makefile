@@ -191,9 +191,13 @@ buildapp:
 	--exclude="$(app_name)/tests" \
 	--exclude="$(app_name)/src" \
 	--exclude="$(app_name)/vite.config.js" \
+	--exclude="$(app_name)/eslint.config.js" \
+	--exclude="$(app_name)/stylelint.config.js" \
+	--exclude="$(app_name)/psalm.xml" \
 	--exclude="$(app_name)/*.log" \
 	--exclude="$(app_name)/phpunit*xml" \
 	--exclude="$(app_name)/composer.*" \
+	--exclude="$(app_name)/vendor" \
 	--exclude="$(app_name)/node_modules" \
 	--exclude="$(app_name)/js/node_modules" \
 	--exclude="$(app_name)/js/tests" \
@@ -204,6 +208,7 @@ buildapp:
 	--exclude="$(app_name)/js/karma.*" \
 	--exclude="$(app_name)/js/protractor.*" \
 	--exclude="$(app_name)/package.json" \
+	--exclude="$(app_name)/package-lock.json" \
 	--exclude="$(app_name)/bower.json" \
 	--exclude="$(app_name)/karma.*" \
 	--exclude="$(app_name)/protractor\.*" \
