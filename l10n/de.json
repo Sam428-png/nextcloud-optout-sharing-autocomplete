@@ -1,0 +1,19 @@
+{ "translations": {
+    "Sharing with this group is not allowed." : "Teilen mit dieser Gruppe ist nicht erlaubt.",
+    "Sharing visibility" : "Sichtbarkeit beim Teilen",
+    "Let users hide from autocomplete and admins block sharing with groups" : "Benutzer können sich in der Autovervollständigung ausblenden, die Administration kann das Teilen mit Gruppen sperren",
+    "Users can hide themselves from autocomplete suggestions, for example when other users share files or folders or mention someone in a comment. They can still be found by typing their exact username.\n\nAdmins can block groups for sharing. Nobody can share files or folders with a blocked group, and blocked groups do not show up in sharing suggestions. This is meant for large groups that are only used for configuration, such as enabling an app for everyone." : "Benutzer können sich aus den Vorschlägen der Autovervollständigung ausblenden, zum Beispiel wenn andere Benutzer Dateien oder Ordner teilen oder jemanden in einem Kommentar erwähnen. Durch Eingabe ihres genauen Benutzernamens können sie weiterhin gefunden werden.\n\nDie Administration kann Gruppen für das Teilen sperren. Niemand kann Dateien oder Ordner mit einer gesperrten Gruppe teilen, und gesperrte Gruppen werden in den Vorschlägen beim Teilen nicht angezeigt. Dies ist für große Gruppen gedacht, die nur zur Konfiguration verwendet werden, etwa um eine App für alle zu aktivieren.",
+    "Autocomplete preference updated" : "Einstellung zur Autovervollständigung aktualisiert",
+    "Failed to save preference. Please try again." : "Einstellung konnte nicht gespeichert werden. Bitte erneut versuchen.",
+    "Failed to save autocomplete preference" : "Einstellung zur Autovervollständigung konnte nicht gespeichert werden",
+    "Autocomplete visibility" : "Sichtbarkeit in der Autovervollständigung",
+    "Control your visibility in autocomplete suggestions" : "Steuere deine Sichtbarkeit in den Vorschlägen der Autovervollständigung",
+    "When enabled, your account does not show up in suggestions when others type part of your name, for example in the share dialog or when mentioning someone in a comment. Typing your exact username, full name or email address still finds you." : "Wenn aktiviert, erscheint dein Konto nicht in den Vorschlägen, wenn andere einen Teil deines Namens eingeben, zum Beispiel im Freigabedialog oder wenn sie jemanden in einem Kommentar erwähnen. Wer deinen genauen Benutzernamen, vollständigen Namen oder deine E-Mail-Adresse eingibt, findet dich weiterhin.",
+    "Hide from autocomplete suggestions" : "Aus den Vorschlägen der Autovervollständigung ausblenden",
+    "Blocked groups saved" : "Gesperrte Gruppen gespeichert",
+    "Failed to save the blocked groups" : "Gesperrte Gruppen konnten nicht gespeichert werden",
+    "Blocked groups" : "Gesperrte Gruppen",
+    "Nobody can share files or folders with these groups, and they do not show up in suggestions, for example in the share dialog. Use this for large groups that are only meant for configuration, such as enabling an app for everyone. Existing shares keep working, but cannot get more permissions. Calendars, address books and teams that contain such a group are not covered." : "Niemand kann Dateien oder Ordner mit diesen Gruppen teilen, und sie werden in den Vorschlägen nicht angezeigt, zum Beispiel im Freigabedialog. Verwende dies für große Gruppen, die nur zur Konfiguration gedacht sind, etwa um eine App für alle zu aktivieren. Bestehende Freigaben funktionieren weiterhin, können aber keine zusätzlichen Berechtigungen erhalten. Kalender, Adressbücher und Teams, die eine solche Gruppe enthalten, werden davon nicht erfasst.",
+    "Groups that nobody can share with" : "Gruppen, mit denen niemand teilen kann"
+},"pluralForm" :"nplurals=2; plural=(n != 1);"
+}

@@ -1,0 +1,65 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Nextcloud autocomplete_settings\n"
+"PO-Revision-Date: 2026-10-12 12:00+0200\n"
+"Last-Translator: \n"
+"Language-Team: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: nl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Sharing with this group is not allowed."
+msgstr "Delen met deze groep is niet toegestaan."
+
+msgid "Sharing visibility"
+msgstr "Zichtbaarheid bij delen"
+
+msgid "Let users hide from autocomplete and admins block sharing with groups"
+msgstr "Laat gebruikers zich verbergen voor automatisch aanvullen en beheerders het delen met groepen blokkeren"
+
+msgid ""
+"Users can hide themselves from autocomplete suggestions, for example when other users share files or folders or mention someone in a comment. They can still be found by typing their exact username.\n"
+"\n"
+"Admins can block groups for sharing. Nobody can share files or folders with a blocked group, and blocked groups do not show up in sharing suggestions. This is meant for large groups that are only used for configuration, such as enabling an app for everyone."
+msgstr ""
+"Gebruikers kunnen zichzelf verbergen uit de suggesties bij automatisch aanvullen, bijvoorbeeld wanneer andere gebruikers bestanden of mappen delen of iemand vermelden in een reactie. Ze zijn nog steeds te vinden door hun exacte gebruikersnaam te typen.\n"
+"\n"
+"Beheerders kunnen groepen blokkeren voor delen. Niemand kan bestanden of mappen delen met een geblokkeerde groep, en geblokkeerde groepen verschijnen niet in de suggesties bij het delen. Dit is bedoeld voor grote groepen die alleen voor configuratie worden gebruikt, zoals het inschakelen van een app voor iedereen."
+
+msgid "Autocomplete preference updated"
+msgstr "Voorkeur voor automatisch aanvullen bijgewerkt"
+
+msgid "Failed to save preference. Please try again."
+msgstr "Opslaan van voorkeur mislukt. Probeer het opnieuw."
+
+msgid "Failed to save autocomplete preference"
+msgstr "Opslaan van voorkeur voor automatisch aanvullen mislukt"
+
+msgid "Autocomplete visibility"
+msgstr "Zichtbaarheid bij automatisch aanvullen"
+
+msgid "Control your visibility in autocomplete suggestions"
+msgstr "Bepaal je zichtbaarheid in de suggesties bij automatisch aanvullen"
+
+msgid "When enabled, your account does not show up in suggestions when others type part of your name, for example in the share dialog or when mentioning someone in a comment. Typing your exact username, full name or email address still finds you."
+msgstr "Als dit is ingeschakeld, verschijnt je account niet in de suggesties wanneer anderen een deel van je naam typen, bijvoorbeeld in het dialoogvenster voor delen of bij het vermelden van iemand in een reactie. Je bent nog steeds te vinden door je exacte gebruikersnaam, volledige naam of e-mailadres te typen."
+
+msgid "Hide from autocomplete suggestions"
+msgstr "Verbergen uit suggesties bij automatisch aanvullen"
+
+msgid "Blocked groups saved"
+msgstr "Geblokkeerde groepen opgeslagen"
+
+msgid "Failed to save the blocked groups"
+msgstr "Opslaan van de geblokkeerde groepen mislukt"
+
+msgid "Blocked groups"
+msgstr "Geblokkeerde groepen"
+
+msgid "Nobody can share files or folders with these groups, and they do not show up in suggestions, for example in the share dialog. Use this for large groups that are only meant for configuration, such as enabling an app for everyone. Existing shares keep working, but cannot get more permissions. Calendars, address books and teams that contain such a group are not covered."
+msgstr "Niemand kan bestanden of mappen met deze groepen delen, en ze verschijnen niet in de suggesties, bijvoorbeeld in het dialoogvenster voor delen. Gebruik dit voor grote groepen die alleen bedoeld zijn voor configuratie, zoals het inschakelen van een app voor iedereen. Bestaande shares blijven werken, maar kunnen geen extra machtigingen krijgen. Agenda's, adresboeken en teams die zo'n groep bevatten, vallen hier niet onder."
+
+msgid "Groups that nobody can share with"
+msgstr "Groepen waarmee niemand kan delen"

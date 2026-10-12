@@ -1,0 +1,65 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Nextcloud autocomplete_settings\n"
+"PO-Revision-Date: 2026-10-12 12:00+0200\n"
+"Last-Translator: \n"
+"Language-Team: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+msgid "Sharing with this group is not allowed."
+msgstr "No está permitido compartir con este grupo."
+
+msgid "Sharing visibility"
+msgstr "Visibilidad al compartir"
+
+msgid "Let users hide from autocomplete and admins block sharing with groups"
+msgstr "Permite a los usuarios ocultarse del autocompletado y a los administradores bloquear el compartir con grupos"
+
+msgid ""
+"Users can hide themselves from autocomplete suggestions, for example when other users share files or folders or mention someone in a comment. They can still be found by typing their exact username.\n"
+"\n"
+"Admins can block groups for sharing. Nobody can share files or folders with a blocked group, and blocked groups do not show up in sharing suggestions. This is meant for large groups that are only used for configuration, such as enabling an app for everyone."
+msgstr ""
+"Los usuarios pueden ocultarse de las sugerencias de autocompletado, por ejemplo cuando otros usuarios comparten archivos o carpetas o mencionan a alguien en un comentario. Aún se les puede encontrar escribiendo su nombre de usuario exacto.\n"
+"\n"
+"Los administradores pueden bloquear grupos para que no se comparta con ellos. Nadie puede compartir archivos ni carpetas con un grupo bloqueado, y los grupos bloqueados no aparecen en las sugerencias al compartir. Esto está pensado para grupos grandes que solo se usan para la configuración, como habilitar una aplicación para todos."
+
+msgid "Autocomplete preference updated"
+msgstr "Preferencia de autocompletado actualizada"
+
+msgid "Failed to save preference. Please try again."
+msgstr "No se pudo guardar la preferencia. Por favor, inténtelo de nuevo."
+
+msgid "Failed to save autocomplete preference"
+msgstr "No se pudo guardar la preferencia de autocompletado"
+
+msgid "Autocomplete visibility"
+msgstr "Visibilidad en el autocompletado"
+
+msgid "Control your visibility in autocomplete suggestions"
+msgstr "Controle su visibilidad en las sugerencias de autocompletado"
+
+msgid "When enabled, your account does not show up in suggestions when others type part of your name, for example in the share dialog or when mentioning someone in a comment. Typing your exact username, full name or email address still finds you."
+msgstr "Si se activa, su cuenta no aparece en las sugerencias cuando otros escriben parte de su nombre, por ejemplo en el diálogo para compartir o al mencionar a alguien en un comentario. Aún se le puede encontrar escribiendo exactamente su nombre de usuario, su nombre completo o su dirección de correo electrónico."
+
+msgid "Hide from autocomplete suggestions"
+msgstr "Ocultarme de las sugerencias de autocompletado"
+
+msgid "Blocked groups saved"
+msgstr "Grupos bloqueados guardados"
+
+msgid "Failed to save the blocked groups"
+msgstr "No se pudieron guardar los grupos bloqueados"
+
+msgid "Blocked groups"
+msgstr "Grupos bloqueados"
+
+msgid "Nobody can share files or folders with these groups, and they do not show up in suggestions, for example in the share dialog. Use this for large groups that are only meant for configuration, such as enabling an app for everyone. Existing shares keep working, but cannot get more permissions. Calendars, address books and teams that contain such a group are not covered."
+msgstr "Nadie puede compartir archivos ni carpetas con estos grupos, y tampoco aparecen en las sugerencias, por ejemplo en el diálogo para compartir. Utilice esta opción para grupos grandes que solo están pensados para la configuración, como habilitar una aplicación para todos. Los recursos compartidos existentes siguen funcionando, pero no pueden obtener más permisos. Esto no se aplica a los calendarios, las libretas de direcciones ni los equipos que contengan uno de estos grupos."
+
+msgid "Groups that nobody can share with"
+msgstr "Grupos con los que nadie puede compartir"

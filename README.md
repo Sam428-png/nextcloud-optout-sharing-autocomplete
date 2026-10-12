@@ -56,6 +56,19 @@ so those updates are allowed as long as they do not add permissions.
 - A blocked group can still be reached through a team, Talk conversation or Deck board that contains it.
   To stop groups from being added to teams, see the `allowed_types` setting of the Teams (circles) app.
 
+### Translations
+
+The app is translated into Dutch, German (informal and formal), French and Spanish.
+The translations are kept in `translationfiles/<language>/autocomplete_settings.po`, Nextcloud reads the generated files in `l10n/`.
+After changing texts, update them with the [translation tool](https://github.com/nextcloud/docker-ci/tree/master/translations/translationtool):
+
+```
+php translationtool.phar create-pot-files
+msgmerge --update translationfiles/nl/autocomplete_settings.po translationfiles/templates/autocomplete_settings.pot
+# translate the new or changed texts, for example with Poedit, for every language
+php translationtool.phar convert-po-files
+```
+
 ### Tests
 
 The tests run against a real Nextcloud, using the official Docker image:
