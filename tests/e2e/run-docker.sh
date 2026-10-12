@@ -24,7 +24,7 @@ fi
 docker rm -f "$CONTAINER" >/dev/null 2>&1 || true
 trap 'docker rm -f "$CONTAINER" >/dev/null 2>&1 || true' EXIT
 
-docker run -d --name "$CONTAINER" -p "$PORT:80" \
+docker run -d --name "$CONTAINER" -p "127.0.0.1:$PORT:80" \
 	-e SQLITE_DATABASE=nextcloud \
 	-e NEXTCLOUD_ADMIN_USER=admin \
 	-e NEXTCLOUD_ADMIN_PASSWORD="$(head -c 24 /dev/urandom | base64)" \
@@ -41,7 +41,7 @@ done
 curl -s "http://localhost:$PORT/status.php" | grep -q '"installed":true' || { docker logs "$CONTAINER" | tail -20; exit 1; }
 
 docker exec "$CONTAINER" mkdir -p /var/www/html/custom_apps/autocomplete_settings
-tar -C "$APP_DIR" -cf - appinfo lib templates js css |
+tar -C "$APP_DIR" -cf - appinfo css js l10n lib templates |
 	docker exec -i "$CONTAINER" tar -C /var/www/html/custom_apps/autocomplete_settings -xf -
 docker exec "$CONTAINER" chown -R www-data:www-data /var/www/html/custom_apps/autocomplete_settings
 docker exec -u www-data "$CONTAINER" php occ app:enable ${FORCE_ENABLE:+--force} autocomplete_settings
