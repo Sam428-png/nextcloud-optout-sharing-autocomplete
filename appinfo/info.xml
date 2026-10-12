@@ -2,28 +2,35 @@
 <info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
     <id>autocomplete_settings</id>
-    <name>Autocomplete Settings</name>
-    <summary>Allow users to opt-out from autocomplete suggestions</summary>
-    <description><![CDATA[This app allows users to hide themselves from autocomplete suggestions, for example when other users share files or folders or mention someone in a comment. Users can still be found by typing their exact username.]]></description>
+    <name>Sharing visibility</name>
+    <summary>Let users hide from autocomplete and admins block sharing with groups</summary>
+    <description><![CDATA[Users can hide themselves from autocomplete suggestions, for example when other users share files or folders or mention someone in a comment. They can still be found by typing their exact username.
+
+Admins can block groups for sharing. Nobody can share files or folders with a blocked group, and blocked groups do not show up in sharing suggestions. This is meant for large groups that are only used for configuration, such as enabling an app for everyone.]]></description>
     <version>1.0.1</version>
     <licence>agpl</licence>
     <author>Tom Wezepoel</author>
     <namespace>AutocompleteSettings</namespace>
+    <types>
+        <prevent_group_restriction/>
+    </types>
     <category>tools</category>
     <bugs>https://github.com/sara-nl/nextcloud-optout-sharing-autocomplete/issues</bugs>
 
     <dependencies>
         <php min-version="8.2"/>
-        <nextcloud min-version="33" max-version="35"/>
+        <nextcloud min-version="34.0.2" max-version="35"/>
     </dependencies>
 
     <settings>
+        <admin>OCA\AutocompleteSettings\Settings\Admin</admin>
         <personal>OCA\AutocompleteSettings\Settings\Personal</personal>
     </settings>
 
     <collaboration>
         <plugins>
             <plugin type="collaborator-search" share-type="SHARE_TYPE_USER">OCA\AutocompleteSettings\Collaboration\HideOptedOutUsersPlugin</plugin>
+            <plugin type="collaborator-search" share-type="SHARE_TYPE_GROUP">OCA\AutocompleteSettings\Collaboration\HideBlockedGroupsPlugin</plugin>
         </plugins>
     </collaboration>
 </info>

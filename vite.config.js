@@ -13,7 +13,8 @@ const __dirname = path.dirname(__filename)
 
 export default createAppConfig(
   {
-    main: path.join(__dirname, 'src', 'main.js')
+    main: path.join(__dirname, 'src', 'main.js'),
+    admin: path.join(__dirname, 'src', 'admin.js'),
   },
   {
     inlineCSS: false
