@@ -1,1 +1,1 @@
-<div id="autocomplete-settings-app" class="section"></div>
+<div id="autocomplete-settings-app"></div>
